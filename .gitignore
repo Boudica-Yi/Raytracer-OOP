@@ -1,1 +1,30 @@
-.DS_Store
+# macOS system files
+**/.DS_Store
+
+# Python cache and compiled files
+__pycache__/
+*.py[cod]
+*$py.class
+
+# Virtual environment folders
+venv/
+env/
+.venv/
+
+# Jupyter notebook checkpoints (if you ever use notebooks later)
+.ipynb_checkpoints/
+
+# Temporary or log files
+*.log
+*.tmp
+
+# VSCode settings (optional)
+.vscode/
+
+# Build / distribution (not relevant now, but useful if you package it later)
+build/
+dist/
+*.egg-info/
+
+# Miscellaneous
+README.txt
