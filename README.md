@@ -94,5 +94,5 @@ For biconvex lenses, the code minimises r<sub>RMS</sub> over curvature pairs via
 - Method 1: Numerical minimisation  
 - Method 2: Parameter sweep
 
-Both methods return similar optimal curvatures (e.g. r<sub>min</sub> ≈ 0.0025 mm at focal plane z ≈ 120 mm):contentReference[oaicite:3]{index=3}.
+Both methods return similar optimal curvatures (e.g. r<sub>min</sub> ≈ 0.0025 mm at focal plane z ≈ 120 mm).
 
