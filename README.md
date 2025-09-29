@@ -1,6 +1,6 @@
 # Optical Ray Tracer
 
-This repository implements a Python-based geometrical ray tracer to simulate the propagation of light rays through different optical elements and to investigate key aberrations such as spherical aberration and coma. The project includes methods for propagation of single rays, generation of collimated ray bundles, focal point calculation, RMS spot radius and diffraction limit analysis, and lens curvature optimisation for improved imaging quality:contentReference[oaicite:0]{index=0}.
+This repository implements a Python-based geometrical ray tracer to simulate the propagation of light rays through different optical elements and to investigate key aberrations such as spherical aberration and coma. The project includes methods for propagation of single rays, generation of collimated ray bundles, focal point calculation, RMS spot radius and diffraction limit analysis, and lens curvature optimisation for improved imaging quality.
 
 ---
 
@@ -21,13 +21,14 @@ The tracer is written entirely in Python and uses object-oriented programming fo
 
 ## Project Structure
 
+```text
 .
-├── raytracer.py # Core raytracer module (all classes and functions)
-├── Tesing2_T11_T14.py # Tests for Tasks 11–14
-├── Tesing3_Task15.py # Tests for Task 15
-├── Testing4.py # Lens optimisation tests (long runtime)
-├── Raytracer Plots # Graphical illustration of all plots from tests
-└── README.md # This file
+├── raytracer.py              # Core raytracer module (all classes and functions)
+├── Tesing2_T11_T14.py        # Tests for Tasks 11–14
+├── Tesing3_Task15.py         # Tests for Task 15
+├── Testing4.py               # Lens optimisation tests (long runtime)
+├── Raytracer Plots           # Graphical illustration of all plots from tests
+└── README.md                 # This file
 
 
 ---
@@ -37,9 +38,9 @@ The tracer is written entirely in Python and uses object-oriented programming fo
 ### 1. Single Ray Propagation
 Rays are represented by positions and directions. At each refracting surface, the intersection point and new direction are calculated using Snell’s law:
 
-\[
+$$
 \vec{k}_r = \frac{n_2}{n_1}\vec{k}_i + \left(\frac{n_2}{n_1}\cos\theta_1 - \cos\theta_2\right)\vec{n}
-\]
+$$
 
 where \( n_1, n_2 \) are refractive indices, \(\vec{n}\) is the surface normal, and \(\theta_1, \theta_2\) are incident and refraction angles.
 
@@ -71,9 +72,9 @@ For example, rays at 5 mm bundle diameter and 700 nm wavelength show significant
 ### 5. RMS Spot Radius and Diffraction Limit
 The RMS spot radius of the bundle at the focal plane is compared against the diffraction limit:
 
-\[
+$$
 L_\text{diff} = \frac{\lambda f}{D}
-\]
+$$
 
 where \( \lambda \) is wavelength, \( f \) focal length, and \( D \) bundle diameter.
 
