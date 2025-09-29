@@ -30,6 +30,7 @@ The tracer is written entirely in Python and uses object-oriented programming fo
 ├── Raytracer Plots           # Graphical illustration of all plots from tests
 └── README.md                 # This file
 
+```
 
 ---
 
